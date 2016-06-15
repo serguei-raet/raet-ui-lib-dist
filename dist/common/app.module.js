@@ -4,6 +4,10 @@ var App;
     var module = (function () {
         function module() {
         }
+        module.getTemplate = function (url) {
+            return module.templates[url];
+        };
+        module.templates = {};
         module.register = angular
             .module("angularPOC", []);
         return module;

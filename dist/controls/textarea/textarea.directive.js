@@ -8,7 +8,7 @@ var App;
             function TextareaDirective() {
                 return {
                     restrict: 'A',
-                    templateUrl: '/dist/controls/textarea/textarea.template.html',
+                    template: App.module.getTemplate('controls\textarea\textarea.template.js'),
                     transclude: true,
                     scope: {
                         ngModel: "=",
